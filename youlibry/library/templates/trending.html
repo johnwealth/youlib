@@ -1,0 +1,768 @@
+{% extends 'base.html' %}
+
+{% block head_title %} 
+ trending
+{% endblock head_title %}
+  {% block content %}
+<div id="content-wrapper">
+    <div class="container-fluid pb-0">
+       <div class="top-mobile-search">
+          <div class="row">
+             <div class="col-md-12">   
+                <form class="mobile-search">
+                   <div class="input-group">
+                     <input type="text" placeholder="Search for..." class="form-control">
+                       <div class="input-group-append">
+                         <button type="button" class="btn btn-dark"><i class="fas fa-search"></i></button>
+                       </div>
+                   </div>
+                </form>   
+             </div>
+          </div>
+       </div>
+       <div class="top-category section-padding mb-4">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="main-title">
+                   <h6>Trending Categories</h6>
+                </div>
+             </div>
+             <div class="col-md-12">
+                <div class="owl-carousel owl-carousel-category">
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/accounting_and_commerce.png" alt="">
+                            <h6>Accounting & Commerce</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/art_and_humanities .png" alt="">
+                            <h6>Art & humanities</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/computing.png" alt="">
+                            <h6>Computing</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/entrepreneurship.png" alt="">
+                            <h6>Entrepreneurship <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></span></h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/exam_preparation.png" alt="">
+                            <h6>Exam preparation</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/health_and_medical.png" alt="">
+                            <h6>Health & medical</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/languages_big.png" alt="">
+                            <h6>Languages</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/leadership_and_personal_development.png" alt="">
+                            <h6>Leadership & personal development</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/nigeria_scheme.png" alt="">
+                            <h6>Nigerian scheme</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/science_and_technology.png" alt="">
+                            <h6>Science & technology</h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/social_science.png" alt="">
+                            <h6>Social science <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></span></h6>
+                            <p>74,853 views</p>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="item">
+                      <div class="category-item">
+                         <a href="category.html">
+                            <img class="img-fluid" src="img/categories/youtube_big.png" alt="">
+                            <h6>Youtube education</h6>
+                            <p>74,853 views</lp>
+                         </a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <hr>
+       <div class="video-block section-padding">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="main-title">
+                   <div class="btn-group float-right right-action">
+                      <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sort by <i class="fa fa-caret-down" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                         <a class="dropdown-item" href="#"><i class="fas fa-fw fa-check-circle"></i> &nbsp; Trending</a>
+                         <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                         <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Recommended</a>
+                      </div>
+                   </div>
+                   <h6>Trending Courses</h6>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/17.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-success">
+                        <a href="category.html">Education</a>   <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/16.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-success">
+                        <a href="category.html">Education</a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/15.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-danger">
+                        <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Unverified"><i class="fas fa-frown text-danger"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/14.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-success">
+                        <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/13.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-success">
+                        <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/12.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-danger">
+                        <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Unverified"><i class="fas fa-frown text-danger"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/11.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-success">
+                        <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="video-card">
+                   <div class="video-card-image">
+                      <a class="play-icon" href="view.html"><i class="fas fa-play-circle"></i></a>
+                      <a href="view.html"><img class="img-fluid" src="img/courses/10.png" alt=""></a>
+                      <div class="time">Youtube Playlist</div>
+                   </div>
+                   <div class="video-card-body">
+                      <div class="video-title">
+                         <a href="view.html">There are many variations of passages of Lorem</a>
+                      </div>
+                      <div class="video-page text-success">
+                        <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                      </div>
+                      <div class="video-view">
+                         1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <hr class="mt-0">
+       <div class="video-block section-padding">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="main-title">
+                   <h6>Trending EduTech Gist</h6>
+                </div>
+             </div>
+             <div class="col-xl-12 col-lg-12">
+                <div class="row">
+                   <div class="col-xl-4 col-md-6 mb-4">
+                      <div class="card p-card shadow border-0">
+                         <a href="people-detail.html">
+                            <div class="row no-gutters">
+                               <div class="col-md-4">
+                                  <img src="img/gists/p1.jpg" class="card-img" alt="...">
+                               </div>
+                               <div class="col-md-8">
+                                  <div class="card-body">
+                                     <h5 class="card-title text-gray-900">Carla Gugino</h5>
+                                     <p class="card-text">Carla was born in Sarasota, Florida. Moved with her mother to Paradise, California, when Carla was just five years old...</p>
+                                     <p class="card-text"><small><span class="text-muted pr-2"><i class="fas fa-film fa-sm ml-1"></i> Acting</span> <span class="text-link">Batman v Superman: Dawn of Justice (2016)</span></small></p>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="col-xl-4 col-md-6 mb-4">
+                      <div class="card p-card shadow border-0">
+                         <a href="people-detail.html">
+                            <div class="row no-gutters">
+                               <div class="col-md-4">
+                                  <img src="img/gists/p3.jpg" class="card-img" alt="...">
+                               </div>
+                               <div class="col-md-8">
+                                  <div class="card-body">
+                                     <h5 class="card-title text-gray-900">Rose Byrne</h5>
+                                     <p class="card-text">Mary Rose Byrne (born 24 July 1979) is an Australian actress. Byrne made her screen debut in 1994 with a small role in the film...</p>
+                                     <p class="card-text"><small><span class="text-muted pr-2"><i class="fas fa-film fa-sm ml-1"></i> Acting</span> <span class="text-link">X-Men: Apocalypse (2016), Batman v Superman</span></small></p>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="col-xl-4 col-md-6 mb-4">
+                      <div class="card p-card shadow border-0">
+                         <a href="people-detail.html">
+                            <div class="row no-gutters">
+                               <div class="col-md-4">
+                                  <img src="img/gists/p4.jpg" class="card-img" alt="...">
+                               </div>
+                               <div class="col-md-8">
+                                  <div class="card-body">
+                                     <h5 class="card-title text-gray-900">Jason Statham</h5>
+                                     <p class="card-text">Jason Statham (born 26. Juli 1967) is an English actor and martial artist, known for his roles in the Guy Ritchie crime films Lock, Stock...</p>
+                                     <p class="card-text"><small><span class="text-muted pr-2"><i class="fas fa-film fa-sm ml-1"></i> Acting</span> <span class="text-link">Fast & Furious Presents: Hobbs & Shaw (2020)</span></small></p>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <hr>
+       <div class="video-block section-padding">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="main-title">
+                   <h6>Trending Modules</h6>
+                </div>
+             </div>
+       <!-- Content Row -->
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"><img src="img/library/2 mc.png" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"><p class="card-text text-gray-900 mt-3 mb-3">The Name Of The Video.</p></a>
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html"> Education  </a><a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/2.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/7 active.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"><p class="card-text text-gray-900 mt-3 mb-3">The Name Of The Video </p> </a>  
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                     <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/3.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/Amoeba sis.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a> 
+                   <div class="video-title">
+                       Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                    <a href="category.html"> Education </a>  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/4.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/AMrita logo.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"><p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a> 
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                     <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/5.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"><img src="img/library/bozeman science.jpg"  class="rounded-circle" alt="..."></a> 
+                   <a href="view.html"><p class="card-text text-gray-900 mt-3 mb-3">The name of the video </p></a>
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/6.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+
+                   <a href="library.html"> <img src="img/library/byjus.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a>
+                   
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education</a>  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/7.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/cellmicrocosmos.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p>  </a>      
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/8.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                    <a href="library.html"> <img src="img/library/khan academy logo.jpg" class="rounded-circle" alt="..."></a>
+                    <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a>
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education</a>  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/ibiology and youreka science 01.jpg" class="rounded-circle" alt="..."></a>
+                    <a href="view.html"><p class="card-text text-gray-900 mt-3 mb-3">The name of the  video</p></a>
+                   
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/2.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/civics Academy.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"><p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a> 
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education <a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/3.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/ibiology and youreka science 02.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a>
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                     <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/9.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"><img src="img/library/fuse school.jpg" class="rounded-circle" alt="..."></a> 
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a>
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education  </a><a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/5.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/oasdom.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video </p></a>
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/6.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/PBS digital studios.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a>
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/7.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/teachers pet logo.jpg" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"> <p class="card-text text-gray-900 mt-3 mb-3">The name of the video</p></a>                    
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                     <a href="category.html"> Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-xl-3 col-md-4 mb-4">
+          <div class="card offer-card shadow border-0">
+             <a href="view.html">
+                <div class="m-card-cover">
+                   <img src="img/modules/10.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body p-3">
+                   <a href="library.html"> <img src="img/library/starlab academy.png" class="rounded-circle" alt="..."></a>
+                   <a href="view.html"><p class="card-text text-gray-900 mt-3 mb-3">The name of the video </p></a>                          
+                   <div class="video-title">
+                      Short description of the video
+                   </div>
+                   <div class="video-page text-success">
+                      <a href="category.html">Education </a> <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                   </div>
+                   <div class="video-view">
+                      1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                   </div>
+                </div>
+             </a>
+          </div>
+       </div>
+       </div>
+       </div>
+       <div class="text-center mt-1 mb-4 col-12">
+          <div class="spinner-border" role="status">
+             <span class="sr-only">Loading...</span>
+          </div>
+       </div>
+    </div>
+
+ </div>
+</div>
+
+{% endblock %}
